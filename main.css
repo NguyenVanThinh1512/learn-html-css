@@ -27,6 +27,7 @@ body{
 }
 .logo{
     margin-left: 42px;
+    margin-right: 15px;
 }
 .item{
     color: black;
@@ -239,6 +240,9 @@ select#block1-select{
     font-weight: 400;
     line-height: normal;
 }
+.board-genre{
+    padding-left: 40px;
+}
 .board-genre a:not(:last-child)::after {
     content: " | ";
     color: rgb(0, 0, 0);
@@ -284,4 +288,33 @@ tr{
 }
 .box-name1 {
     margin-top: 4px;
+}
+.box-board-genre-icom{
+    text-align: right;
+    padding-right: 27px;
+}
+.box-logo{
+    display: flex;
+}
+@media only screen and (max-width:320px) {
+    .menu, .box, .header-left .box-logo h1 {
+        display: none;
+    }
+    .header-left {
+        width: 40%;
+    }
+    .header-right{
+        width: 60%;
+    }
+}
+@media only screen and (max-width:768px) {
+    .menu, .box {
+        display: none;
+    }
+}
+@media only screen and (max-width:1024px) {
+    .menu {
+        display: none;
+    }
+    
 }
