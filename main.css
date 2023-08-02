@@ -149,7 +149,7 @@ body{
     margin: 2% 20% 2% 20%;
     max-width: 1200px;
     background: #FFF;
-    height: 2100px;
+    height: 1430px;
     justify-content: center;
 }
 .router-name a:not(:last-child)::after {
@@ -198,6 +198,18 @@ select#block1-select{
 .cot{
     width: 100%;
 }
+.cot1{
+    width: 3%;
+}
+.cot2{
+    width: 45%;
+}
+.cot3{
+    width: 35%;
+}
+.cot4{
+    width: 17%;
+}
 .clock1-image{
     margin-left: 8px;
 }
@@ -241,7 +253,7 @@ select#block1-select{
     line-height: normal;
 }
 .board-genre{
-    padding-left: 40px;
+    padding-left: 20px;
 }
 .board-genre a:not(:last-child)::after {
     content: " | ";
@@ -291,7 +303,10 @@ tr{
 }
 .box-board-genre-icom{
     text-align: right;
-    padding-right: 27px;
+    padding-right: 10px;
+}
+th.cot4 {
+    padding-left: 25px;
 }
 .box-logo{
     display: flex;
@@ -306,15 +321,67 @@ tr{
     .header-right{
         width: 60%;
     }
+    .cot1{
+        width: 10%;
+    }
+    .cot2{
+        width: 25%;
+    }
+    .cot3{
+        width: 65%;
+    }
+    .image-name {
+        margin-right: 5px;
+    }
+    td.board-genre {
+        padding-left: 4px;
+    }
+    .title h1 {
+        font-size: 30px;
+    }
+    .footer-menu {
+        padding-left: 25px;
+        padding-right: 20px
+    }
+    .footer-menu a:not(:last-child)::after {
+        content: " | ";
+        color: white;
+        margin: 0 3px 0 3px;
+    }
 }
 @media only screen and (max-width:768px) {
-    .menu, .box {
+    .menu, .box, th.cot4, td.box-board-genre-icom, .box-name1 {
         display: none;
+    }
+    .board-conten span{
+        display: none;
+    }
+    .board-conten {
+        padding-top: 15px;
+    }
+    .cot1{
+        width: 5%;
     }
 }
 @media only screen and (max-width:1024px) {
     .menu {
         display: none;
     }
-    
+    .conten {
+        margin: 2% 10% 2% 10%;
+    }
+    .board-genre {
+        padding-left: 0px;
+    }
+    .box-board-genre-icom {
+        text-align: right;
+        padding-right: 5px;
+    }
+    th.cot4 {
+        text-align: right;
+        padding-right: 20px;
+    }
+    .cot1{
+        width: 4%;
+    }
 }
